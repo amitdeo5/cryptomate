@@ -22,27 +22,42 @@ const showPrice = (coinData)=>{
     const vol = coinData.volume;
     const change = coinData.priceChange1d;
     const coin = coinData.name;
+    const rank = coinData.rank;
+    const marketcap = coinData.marketCap;
+    
     const curr = 'USD';
     var col= "green";
     if(change<0){
         col = "red";
     }
-    res.innerHTML = `<tr class="bg-primary" style="color: white;">
+    res.innerHTML =    
+   
+    
+    `  
+    <p style="color:${col};">Rank : ${rank} </p>
+      
+      
+<tr class="bg-primary" style="color: white;">
+   
+<td>${coin}</td>
     <td>
-        Property
-    </td>
-    <td>
-        Value
+        Current Value
     </td>
 </tr>
 <tr>
-    <td>${coin}</td>
+    <td>Price</td>
     <td style="color:${col};"><span style="font-size: 1.3em;">${price}</span> ${curr}</td>
 </tr>
 <tr>
     <td>Volume (24hrs)</td>
     <td>${vol}</td>
 </tr>
+
+<tr>
+    <td>MarketCap</td>
+    <td>${marketcap}</td>
+</tr>
+
 <tr>
     <td>Change (24hrs)</td>
     <td style="color:${col};">${change} ${curr}</td>
