@@ -37,6 +37,11 @@ h3{
     color:#61a6f0;
 }
 
+.responsive {
+  max-width: 70%;
+  height: auto;
+}
+
 p,center{
     color:#bcd6f2;
   text-align: justify;
@@ -47,6 +52,8 @@ p,center{
     overflow: hidden;
     background-color:#ffb338;
     padding: 0px 10px;
+    position: static;
+    width: 100%;
   }
   
   .header a {
@@ -58,7 +65,7 @@ p,center{
     font-size: 14px; 
     line-height: 20px;
     border-radius: 0px;
-    image-rendering: autoss;
+    image-rendering: auto;
   }
   
   .header a.logo .img {
@@ -70,22 +77,16 @@ p,center{
   
   .header a.active {
     background-color: dodgerblue;
+    
     color: white;
+ 
   }
   
   .header-right {
     float: right;
   }
 
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  .sticky + .content {
-    padding-top: 102px;
-  }
+ 
   
 .card {
     background-color: #1779e1;
@@ -125,6 +126,25 @@ p,center{
       margin-bottom: 20px;
       font-size: x-small;
     }
+
+     h1 {
+      font-size: x-large;
+     
+      
+    }
+
+    h2 {
+      font-size:  x-large;
+    }
+
+    h3 {
+      font-size: medium;
+    }
+
+    h6{
+      font-size: small;
+    }
+
   }
   
   /* Style the counter cards */
