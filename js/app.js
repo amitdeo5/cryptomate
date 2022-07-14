@@ -23,6 +23,8 @@ const showPrice = (coinData)=>{
     const change = coinData.priceChange1d;
     const coin = coinData.name;
     const rank = coinData.rank;
+    const icon = coinData.icon;
+    const symbol = coinData.symbol;
     const marketcap = coinData.marketCap;
     
     const curr = 'USD';
@@ -33,10 +35,13 @@ const showPrice = (coinData)=>{
     res.innerHTML =    
    
     
-    `  
-    <p style="color:${col};">Rank : ${rank} </p>
+    `  <th>
+  <div style="padding:20px">  <p style="color:${col};">Rank : ${rank}  <p style="color:black;"> Symbol : ${symbol} </p> </p>
+  <td>  <img src= "${icon}"> </img>  </td>
+  <div>
+    </th>
       
-      
+
 <tr class="bg-primary" style="color: white;">
    
 <td>${coin}</td>
