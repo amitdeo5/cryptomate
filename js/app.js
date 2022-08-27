@@ -42,7 +42,7 @@ const showPrice = (coinData)=>{
     </th>
       
 
-<tr class="bg-primary" style="color: white; width: 200px;">
+<tr class="bg-primary" style="color: white;">
    
 <td>${coin}</td>
     <td>

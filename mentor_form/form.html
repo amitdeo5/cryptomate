@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="contactForm">
+            <div class="alert">Your message sent</div>
+
+            <div class="inputBox">
+              <h3> Your Name : </h3>  
+                <input type="text" id="firstname" placeholder="First name...." />
+            </div>
+
+            <div class="inputBox"> 
+                
+                  <input type="text" id="lastname" placeholder="Last name...." />
+              </div>
+
+            <div class="inputBox">
+                <h3>Email Address: </h3>  
+                <input type="email" id="emailid" placeholder="...abc@xyz.com" />
+            </div>
+
+            <div class="inputBox">
+                <h3> Mobile Number : </h3>  
+                <input type="text" id="mobileno" placeholder="+91........" />
+            </div>
+
+            <div class="inputBox">
+                <h3> Year of experience :</h3>  
+                <input type="number" id="year" placeholder="" />
+            </div>
+
+            <div class="inputBox">
+                <h3> Your expertise :</h3>  
+                <textarea id="msgContent" cols="30" rows="10" placeholder="briefly mention your area of expertise in bullet points"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <h3> Your recent photo :</h3>  
+                <input type="file" id="photo" name="filename">
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+
+</html>
