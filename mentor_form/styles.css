@@ -10,10 +10,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#bcd6f2;
     
 }
 
-h3{
+h3, h2{
     color:#bcd6f2;
    
 }
