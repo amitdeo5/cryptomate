@@ -28,10 +28,10 @@ function submitForm(e) {
   var emailid = getElementVal("emailid");
   var mobileno = getElementVal("mobileno");
   var year = getElementVal("year");
+  var year = getElementVal("brand");
   var msgContent = getElementVal("msgContent");
-  var photo = getElementVal("photo");
 
-  saveMessages(firstname, lastname, emailid, mobileno, year, msgContent, photo);
+  saveMessages(firstname, lastname, emailid, mobileno, year, brand, msgContent);
 
   //   enable alert
   document.querySelector(".alert").style.display = "block";
@@ -45,7 +45,7 @@ function submitForm(e) {
   document.getElementById("contactForm").reset();
 }
 
-const saveMessages = (firstname, lastname, emailid, mobileno, year, msgContent, photo) => {
+const saveMessages = (firstname, lastname, emailid, mobileno, year, brand, msgContent) => {
   var newContactForm = contactFormDB.push();
 
   newContactForm.set({
@@ -53,9 +53,10 @@ const saveMessages = (firstname, lastname, emailid, mobileno, year, msgContent, 
     lastname: lastname,
     emailid: emailid,
     mobileno: mobileno,
-    year: year,
+    brandname: year,
+    service: brand,
     msgContent: msgContent,
-    photo: photo,
+
   });
 };
 
